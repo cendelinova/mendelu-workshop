@@ -33,7 +33,7 @@ objects:
               medium: Memory
         containers:
         - name: frontend
-          image: "quay.io/sochotni/mendelu-workshop:latest"
+          image: "quay.io/cendelinova/mendelu-workshop:latest"
           imagePullPolicy: Always
           volumeMounts:
             - mountPath: /dev/shm
@@ -52,7 +52,7 @@ objects:
             - "--cgi"
             - "8080"
         - name: backend
-          image: "quay.io/sochotni/mendelu-workshop:latest"
+          image: "quay.io/cendelinova/mendelu-workshop:latest"
           imagePullPolicy: Always
           resources:
             limits:
